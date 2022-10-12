@@ -3,61 +3,37 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-	int main(void) {
-  	int grade;
-  	scanf("%d",&grade);
-  	if(grade>100 | grade<0);
-  	printf("請重新輸入");
+int main(void) {
+	int num = 0;
+	int space;
 	
-  	
-	switch(grade/10){
-	
-	    case 10:
-		case 9:
-		printf("A");
-		break;
-	
-		case 8:
-		printf("B");
-		break;
-	
-		case 7:
-		printf("C");
-		break;
-	
-		case 6:
-		printf("D");
-		break;
+	while(num < 5){
+		space = 0;
 		
+		while(space <= num){
+			printf("*");
+			space = space + 1;
 	
+		}
 		
-		default:
-		printf("E");
-		break;
-		
-		
+		printf("\n");	
+		num = num + 1;
 	}
-	/*
-	if(grade>=90 & grade<=100){
-		printf("A");
-	}
+	
+	num = num - 1;
+	
+	while(num > 0){
+		space = 0;
 		
-	if(grade>=80 & grade<=89){
+		while(space < num){
+			printf("*");
+			space = space + 1;
 	
-		printf("B");
-    }
-	if(grade>=70 & grade<=79){
-	
-		printf("C");
-	}	
-	if(grade>=60 & grade<=69){
-	
-		printf("D");
+		}
+		
+		printf("\n");	
+		num = num - 1;
 	}
-	if(grade<60){
 	
-		printf("E");
-	}
-	*/
 	return 0;
 }
